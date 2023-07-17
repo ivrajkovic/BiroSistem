@@ -1,0 +1,143 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+blue:   #3396BD
+red:    #CC4D3F
+yellow: #C99C2C
+orange: #CC4E1C
+
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #3396BD;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+.container {
+    padding: 4% 7%;
+}
+.section-header {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #C99C2C;
+    padding: 2rem 0 2rem;
+}
+/* Section blue */
+.section-blue {
+    background-color: #3396BD;
+    color: #FFFFFF;
+}
+/* Section white */
+.section-white {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.section-white i, h1 {
+    color: #C99C2C;
+}
+.section-white h5 {
+    padding: 1rem 0 1rem;
+}
+.big-icon {
+        padding-top: 2rem;
+    }
+/* Section orange */
+.section-orange {
+    background-color: #CC4E1C;
+    color: #FFFFFF;
+}
+/* Navigation bar section */
+#navigation .container{
+    padding: 0 7%;
+}
+.nav-link, .nav-link:visited {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 5px;
+    color: #3396BD;
+}
+
+/* Header section */
+#header img {
+    width: 12rem;
+    border-radius: 50%;
+    margin: 2rem auto 1.5rem;
+}
+
+/* Services section */
+#services ul {
+    text-align: left;
+    line-height: 2;
+}
+
+/* Contact section */
+#contact a, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Footer section*/
+#footer ul, h3 {
+   text-align: left;
+}
+#footer a, a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#footer p {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* Media Query */
+@media (max-width: 768px) {
+    .container {
+        padding: 7% 7%;
+    }
+}
+
+/* Angled sections */
+.angle-section {
+  position: relative;
+  z-index: 1;
+}
+.angle-section:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+/* Navbar hide */
+.autohide{
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    width: 100%;
+	    z-index: 1030;
+        border-bottom: 1px solid #3AA7BA;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
