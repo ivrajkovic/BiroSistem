@@ -31,6 +31,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #C99C2C;
     padding: 2rem 0 2rem;
 }
+hr {
+    border-style: dotted none;
+    border-top-width: 1rem;
+    border-top-color: #3396BD;
+    width: 50%;
+    margin: auto;
+}
+.accordion {
+    --bs-accordion-active-bg: #3396BD;
+    --bs-accordion-border-color: #3396BD;
+    --bs-accordion-border-width: 1px;
+}
 /* Section blue */
 .section-blue {
     background-color: #3396BD;
@@ -53,6 +65,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Section orange */
 .section-orange {
     background-color: #CC4E1C;
+    color: #FFFFFF;
+}
+/* Section yellow */
+.section-yellow {
+    background-color: #C99C2C;
     color: #FFFFFF;
 }
 /* Navigation bar section */
